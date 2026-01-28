@@ -1,1 +1,28 @@
+The core components of Linux : -
+
+= Kernel - it is the heart of the operating system
+           Manages hardware resouces (CPU,memory,devices)
+
+= System Libraries - It is a special functions and programs that applications use to interact with the kernel
+
+= System Utilities - Basic tools that perform essential tasks.
+                     ex - ls , cp, mv, cat, ps .
+                     They allow users to manages files , processes , and system settings.
+
+= Shell - Command-line interface between user and system.
+          Translates user commands into actions for the kernel.
+
+= File System - Organizes data and provides a way to store or retrieve files.
+                Hierarchical structure starting from / .
+
+= User Applications - Programs that run on top of linux.
+                      ex - text editors (vim, nano), browsers (Firefox), servers (Apache, Nginx).
+
+
+How processes are created and managed
+
+= A new process is created using the fork() system call. The new process is called the child process, and it’s a copy of the parent process.
+
+  
+
 
