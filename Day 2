@@ -1,4 +1,4 @@
-The core components of Linux : -
+**The core components of Linux : -**
 
 = Kernel - it is the heart of the operating system
            Manages hardware resouces (CPU,memory,devices)
@@ -19,10 +19,37 @@ The core components of Linux : -
                       ex - text editors (vim, nano), browsers (Firefox), servers (Apache, Nginx).
 
 
-How processes are created and managed
+**How processes are created and managed**
 
 = A new process is created using the fork() system call. The new process is called the child process, and it’s a copy of the parent process.
 
-  
+**What systemd does and why it matters ?**
+
+= systemd is the init system and service manager for modern Linux distributions.
+
+  It’s the first process started by the kernel (PID 1) and is responsible for bringing the system up and managing services throughout its lifecycle.
+
+  Core functions:
+           - Service Management 
+           - Parallel Startup 
+           - Logging
+           - Dependency Handling
+           - Process Management 
+           - Unit Files
+
+Why systemd Matter
+= - Faster Boot Times
+→ It starts many services at the same time, so your computer boots quicker.
+- Reliability
+→ If a program crashes, systemd can restart it automatically to keep things running smoothly.
+- Consistency Across Distros
+→ Most Linux systems (Ubuntu, Fedora, Debian, Arch, etc.) use systemd, so once you learn it, the knowledge works everywhere.
+- Unified Management
+→ You don’t need lots of different tools. With one command (systemctl), you can start, stop, check, or enable services.
+- Modern Features
+→ It has built-in logging, resource control (like limiting CPU/memory for a service), and scheduling timers—so fewer extra tools are needed.
+
+**Systemd is the manager of services in Linux. It makes your system boot faster, keeps programs stable, works the same across most Linux distros, and gives you one simple way to control everything.**
+
 
 
