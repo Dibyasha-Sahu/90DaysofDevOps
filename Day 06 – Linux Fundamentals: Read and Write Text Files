@@ -1,0 +1,34 @@
+To create File
+
+= touch myfile.txt (create new empty file)
+
+To write text to the file
+
+= echo " Hello , this is my first line" > myfile.txt
+ (> means “write fresh, overwrite anything inside.”)
+
+To append new lines
+
+= echo "This is my second line" >> myfile.txt
+  echo "And here is a third line" >> myfile.txt
+  (👉 >> means add to the file without erasing what’s already there)
+
+(echo "First line" > myfile.txt
+echo "Second line" >> myfile.txt
+echo "Third line" >> myfile.txt)
+
+Read the File Back
+
+= cat myfile.txt ( Shows the whole file contents)
+
+Read the Beginning
+
+= head -n 2 myfile.txt
+
+Read the End
+
+= tail -n 2 myfile.txt
+
+Use tee to Write and Display at the Same Time
+
+echo"Line 4 : added with tee " | tee -a myfile.txt
