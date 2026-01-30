@@ -1,1 +1,29 @@
+Process management :- running instance of any program
 
+ps = to check how many process run
+ps aux = to list the all the processes
+kill <PIDno> = to kill a process
+kill -9 <PIDno> = to kill a process forcefully
+pkill <name> = kill process by name
+jobs = it's like a  task manager inside the shell—it helps you keep track of commands running in the background.
+fg %n → Brings job n to foreground.
+bg %n → Resumes job n in background.
+
+File System :-
+
+ls = list the file
+ls -l =list the file with details
+cd = change directory
+pwd = show the currect working directory
+mkdir <folder name> = create new directory
+rm -r <folder name> = to delete the folder and it's content
+mv <old_name , new_name> = move or rename the file /directory
+cat file.txt = to diplay the file content
+find / name file.text = to search for a file
+cp file1/file2 = copy a file
+
+Networking troubleshooting :-
+
+ping google.com = to test connectivity to a host
+ip addr  = to show the IP addresses of the network
+curl hhtp://example.com = fetch a webpage and api response
