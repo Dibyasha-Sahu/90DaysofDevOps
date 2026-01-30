@@ -1,1 +1,34 @@
+I am doing this in my local 
 
+Check running processes
+
+-  for checking process i used " ps " 
+     ( it shows as a running process "bash" , "ps" )
+
+  for checking process with details i used "ps aux"
+     ( it shows details of user, pid no , CPU )
+
+  To check the live CPU/memory usage i used " top "
+      ( it show me how much i used and how much memoery lived )
+
+Inspect one systemd service
+
+- I used "systemctl list-units --type=service" as it's a systemmd service part
+      ( shows all services currently running (like ssh, cron, docker, etc)
+
+Capture a small troubleshooting flow
+
+- I tried to run ifconfig but the command was not found.
+
+- I ran ls /sbin to see if it existed. It didn't.
+
+- I ran apt update && apt install net-tools -y.
+
+- Run if config again, and now it displays my container's internal IP address.
+
+
+Pick one service on your system (example: ssh, cron, docker) and inspect it
+
+- I’ll choose ssh (the secure shell service) 
+
+  Check if the service process is running "ps aux | grep ssh"
